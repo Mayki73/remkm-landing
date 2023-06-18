@@ -4,7 +4,7 @@ exports.handler = async (event) => {
   const transporter = nodemailer.createTransport({
     host: "smtp.yandex.com",
     port: 465,
-    secure: false,
+    secure: true,
     auth: {
       user: "servicecoffee.5upport@yandex.ru",
       pass: "xjtsmyemkrbdvzlq",
