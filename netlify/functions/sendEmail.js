@@ -52,9 +52,8 @@ exports.handler = async (event) => {
   };
 
   try {
-    transporter.sendMail(mailOptions, (err, info) => {
-      console.log(err, info);
-    });
+    const info = await transporter.sendMail(mailOptions);
+    console.log('Email sent:', info.response);
 
     return {
       statusCode: 200,
