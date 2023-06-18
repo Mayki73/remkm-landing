@@ -2,11 +2,11 @@ import React from "react";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { IContact } from "../../models/contact.model";
-import { useForm } from "../../../node_modules/react-hook-form/dist";
 import { useIntl } from "react-intl";
 import PriceCardForm from "./PriceCardForm";
 import { enqueueSnackbar } from "notistack";
 import { useSendEmail } from "../../services/request.service";
+import { useForm } from "react-hook-form";
 
 const PriceCard: React.FC = () => {
   const intl = useIntl();
