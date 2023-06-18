@@ -1,9 +1,9 @@
 import React from "react";
-import { Controller, UseFormReturn } from "../../../node_modules/react-hook-form/dist";
 import Input from "../Form/Input";
 import Button from "../Form/Button";
 import { FormattedMessage } from "react-intl";
 import { IContact } from "../../models/contact.model";
+import { Controller, UseFormReturn } from "react-hook-form";
 
 interface IProps {
   useFormInstance: UseFormReturn<IContact>;

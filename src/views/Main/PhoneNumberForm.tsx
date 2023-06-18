@@ -1,5 +1,4 @@
 import React from "react";
-import { Controller, useForm } from "../../../node_modules/react-hook-form/dist";
 import * as yup from "yup";
 import Input from "../../components/Form/Input";
 import Button from "../../components/Form/Button";
@@ -9,6 +8,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { enqueueSnackbar } from "notistack";
 import clsx from "clsx";
 import { useSendEmail } from "../../services/request.service";
+import { Controller, useForm } from "react-hook-form";
 
 interface IProps {
   answers?: string[];
