@@ -7,7 +7,7 @@ exports.handler = async (event) => {
     secure: true,
     auth: {
       user: "servicecoffee.5upport@yandex.ru",
-      pass: "Anton7391824",
+      pass: "xjtsmyemkrbdvzlq",
     },
   });
   const { phone, answers } = JSON.parse(event.body);
