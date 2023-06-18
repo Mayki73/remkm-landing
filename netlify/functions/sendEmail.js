@@ -52,7 +52,9 @@ exports.handler = async (event) => {
   };
 
   try {
-    transporter.sendMail(mailOptions).then((res) => console.log(res.data));
+    transporter.sendMail(mailOptions, (err, info) => {
+      console.log(err, info);
+    });
 
     return {
       statusCode: 200,
