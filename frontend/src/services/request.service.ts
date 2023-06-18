@@ -4,7 +4,7 @@ import { useMutation } from "@tanstack/react-query";
 
 const sendEmail = async (data: IContact) => {
   return axios
-    .post("http://localhost:3001/api/email", data)
+    .post("/.netlify/functions/sendEmail", data)
     .then((res) => res.data);
 };
 
