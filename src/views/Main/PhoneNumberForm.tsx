@@ -1,5 +1,5 @@
 import React from "react";
-import { Controller, useForm } from "react-hook-form";
+import { Controller, useForm } from "../../../node_modules/react-hook-form/dist";
 import * as yup from "yup";
 import Input from "../../components/Form/Input";
 import Button from "../../components/Form/Button";

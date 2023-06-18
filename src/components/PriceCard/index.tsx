@@ -2,7 +2,7 @@ import React from "react";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { IContact } from "../../models/contact.model";
-import { useForm } from "react-hook-form";
+import { useForm } from "../../../node_modules/react-hook-form/dist";
 import { useIntl } from "react-intl";
 import PriceCardForm from "./PriceCardForm";
 import { enqueueSnackbar } from "notistack";
