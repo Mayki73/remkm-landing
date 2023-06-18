@@ -16,7 +16,7 @@ exports.handler = async (event) => {
 
   const mailOptions = {
     from: process.env.YANDEX_USERNAME,
-    to: "serviscoffee@yandex.ru", //serviscoffee@yandex.ru
+    to: "antoniestories@gmail.com", //serviscoffee@yandex.ru
     subject: subject,
     html: `
         <!DOCTYPE html>
@@ -52,7 +52,7 @@ exports.handler = async (event) => {
   };
 
   try {
-    const response = transporter.sendMail(mailOptions);
+    const response = await transporter.sendMail(mailOptions);
     console.log(response.then((res) => res))
     return {
       statusCode: 200,
