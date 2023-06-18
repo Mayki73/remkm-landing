@@ -11,6 +11,7 @@ exports.handler = async (event) => {
     },
   });
   const { phone, answers } = JSON.parse(event.body);
+  console.log(phone, answers);
 
   const subject = `Новая заявка из REMKM`;
 
