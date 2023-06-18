@@ -46,7 +46,7 @@ const Main: React.FC = () => {
 
       <BasicConditionsSection />
 
-      <TestSection changeTestModalState={changeTestModalState} />
+      <TestSection />
 
       <ManagerInfoSection />
 
