@@ -11,7 +11,6 @@ exports.handler = async (event) => {
     },
   });
   const { phone, answers } = JSON.parse(event.body);
-  console.log(phone, answers);
 
   const subject = `Новая заявка из REMKM`;
 
@@ -61,6 +60,7 @@ exports.handler = async (event) => {
       body: "Ваши данные успешно отправлены!",
     };
   } catch (error) {
+    console.log('Email sent:', error);
     return {
       statusCode: 500,
       body: "Произошла ошибка!",
