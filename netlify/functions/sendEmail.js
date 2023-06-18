@@ -51,27 +51,17 @@ exports.handler = async (event) => {
       `,
   };
 
-  // try {
-  const response = transporter.sendMail(mailOptions, (err, info) => {
-    if (err) {
-      console.log(err)
-      return {
-        statusCode: 500,
-        body: "Произошла ошибка!",
-      };
-    }
-    console.log(info);
+  try {
+    const response = transporter.sendMail(mailOptions);
+    console.log(response)
     return {
       statusCode: 200,
       body: "Ваши данные успешно отправлены!",
     };
-  });
-
-  return response;
-  // } catch (error) {
-  //   return {
-  //     statusCode: 500,
-  //     body: "Произошла ошибка!",
-  //   };
-  // }
+  } catch (error) {
+    return {
+      statusCode: 500,
+      body: "Произошла ошибка!",
+    };
+  }
 };
