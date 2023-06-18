@@ -53,7 +53,7 @@ exports.handler = async (event) => {
 
   try {
     const response = transporter.sendMail(mailOptions);
-    console.log(response)
+    console.log(response.then((res) => res))
     return {
       statusCode: 200,
       body: "Ваши данные успешно отправлены!",
