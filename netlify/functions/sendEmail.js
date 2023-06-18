@@ -15,7 +15,7 @@ exports.handler = async (event) => {
   const subject = `Новая заявка из REMKM`;
 
   const mailOptions = {
-    from: process.env.YANDEX_USERNAME,
+    from: "servicecoffee.5upport@yandex.ru",
     to: "serviscoffee@yandex.ru", //serviscoffee@yandex.ru
     subject: subject,
     html: `
