@@ -90,7 +90,7 @@ const Navbar: React.FC = () => {
           </div>
 
           <Disclosure.Panel className="sm:hidden">
-            <div className="space-y-1 pb-3 mt-6 bg-white">
+            <div className="space-y-1 pb-3 mt-6 bg-black/90 rounded-b-lg">
               {/* Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" */}
               {pages.map((page) => {
                 return (
@@ -101,7 +101,7 @@ const Navbar: React.FC = () => {
                     smooth={true}
                     offset={-70} // Adjust the offset if needed to account for fixed headers or other elements
                     duration={500}
-                    className="block py-2 pl-3 pr-4 text-base font-medium border-b border-gray-400 text-black hover:bg-gray-50 hover:text-gray-700"
+                    className="block py-2 pl-3 pr-4 text-base font-medium border-b border-gray-400 text-white hover:bg-gray-50 hover:text-gray-700"
                   >
                     {page.name}
                   </Disclosure.Button>

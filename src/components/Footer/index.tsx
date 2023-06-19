@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
         <p className="text-2xl text-white">
           <FormattedMessage id="PHONE" />
         </p>
-        <div className="text-gray-700">
+        <div className="text-gray-200 max-w-[450px]">
           <p>Юридический адрес: г. Минск ул. Калиновского 64,41</p>
           <p>УНП 192834683</p> <p>IBAN BY63 ALFA 3013 2735 8800 1027 0000</p>
           <p>СВИФТ - ALFABY2X</p>
