@@ -6,7 +6,7 @@ import TopSectionBackground from "../../../assets/top-section-bg.jpg";
 const TopSection: React.FC = () => {
   return (
     <section
-      className="flex flex-col items-center pt-24 justify-center text-white bg-cover bg-center bg-no-repeat w-full h-[900px]"
+      className="flex flex-col items-center pt-32 justify-center text-white bg-cover bg-center bg-no-repeat w-full h-[900px]"
       style={{ backgroundImage: `url(${TopSectionBackground})` }}
     >
       <div className="max-w-7xl w-full px-5 md:mx-auto">
