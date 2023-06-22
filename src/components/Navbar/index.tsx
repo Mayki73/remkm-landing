@@ -36,7 +36,7 @@ const Navbar: React.FC = () => {
   ];
 
   return (
-    <Disclosure as="nav" className="w-full absolute top-6">
+    <Disclosure as="nav" className="w-full absolute">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

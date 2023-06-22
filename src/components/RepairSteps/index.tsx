@@ -44,7 +44,7 @@ const RepairSteps: React.FC<IProps> = ({ onClickButton }) => {
             className="p-8 outline-none border-b hover:bg-[#B8621B] hover:text-black transition-all"
             selectedClassName="bg-[#B8621B] text-black"
           >
-            <div className="p-2 bg-gray-200/80 rounded-md w-max">
+            <div className="p-2 bg-gray-200/80 rounded-md max-w-[5rem]">
               {intl.formatMessage({ id: "PHASE" }, { number: tab.id })}
             </div>
             <p className="text-xl mt-5">{tab.name}</p>

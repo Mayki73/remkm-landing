@@ -39,7 +39,7 @@ const PriceCard: React.FC = () => {
         минут
       </h1>
       <p className="text-black mb-7 mt-3">
-        <b>+ подарок:</b> чашка свежеобжаренного крафтового кофе
+        <b>+ подарок:</b> упаковка свежеобжаренного крафтового кофе
       </p>
       <PriceCardForm
         useFormInstance={useFormReturn}
