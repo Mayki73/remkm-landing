@@ -11,6 +11,11 @@ exports.handler = async (event) => {
     },
   });
   const { phone, answers } = JSON.parse(event.body);
+  if (phone === "+375 () - -")
+    return {
+      statusCode: 500,
+      body: "Произошла ошибка!",
+    };
 
   const subject = `Новая заявка из REMKM`;
 
@@ -53,14 +58,14 @@ exports.handler = async (event) => {
 
   try {
     const info = await transporter.sendMail(mailOptions);
-    console.log('Email sent:', info.response);
+    console.log("Email sent:", info.response);
 
     return {
       statusCode: 200,
       body: "Ваши данные успешно отправлены!",
     };
   } catch (error) {
-    console.log('Email sent:', error);
+    console.log("Email sent:", error);
     return {
       statusCode: 500,
       body: "Произошла ошибка!",
