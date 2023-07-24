@@ -26,55 +26,67 @@ const LogoCarouselSection: React.FC = () => {
   const deferredJura = useDeferredValue(Jura);
   const deferredMelitta = useDeferredValue(Melitta);
   const deferredMiele = useDeferredValue(Miele);
-  
+
   return (
     <section className="flex justify-center h-[10rem] items-center text-white w-full bg-black">
       <LogoCarousel speed={17} direction="right">
-        <img className="ml-20 w-full h-[6rem]" src={deferredBork} alt="Bork" />
         <img
-          className="ml-20 w-full h-[6rem]"
+          className="ml-20 w-[6rem] md:w-full h-[3rem] md:h-[6rem]"
+          src={deferredBork}
+          alt="Bork"
+        />
+        <img
+          className="ml-20 w-[6rem] md:w-full h-[3rem] md:h-[6rem]"
           src={deferredBosch}
           alt="Bosch"
         />
         <img
-          className="ml-20 w-full h-[6rem]"
+          className="ml-20 w-[6rem] md:w-full h-[3rem] md:h-[6rem]"
           src={deferredDelonghi}
           alt="Delonghi"
         />
         <img
-          className="ml-20 w-full h-[6rem]"
+          className="ml-20 w-[6rem] md:w-full h-[3rem] md:h-[6rem]"
           src={deferredKrups}
           alt="Krups"
         />
         <img
-          className="ml-20 w-full h-[6rem]"
+          className="ml-20 w-[6rem] md:w-full h-[3rem] md:h-[6rem]"
           src={deferredPhilips}
           alt="Philips"
         />
         <img
-          className="ml-20 w-full h-[6rem]"
+          className="ml-20 w-[6rem] md:w-full h-[3rem] md:h-[6rem]"
           src={deferredSaeco}
           alt="Saeco"
         />
-        <img className="ml-20 w-full h-[6rem]" src={deferredSmeg} alt="Smeg" />
         <img
-          className="ml-20 w-full h-[6rem]"
+          className="ml-20 w-[6rem] md:w-full h-[3rem] md:h-[6rem]"
+          src={deferredSmeg}
+          alt="Smeg"
+        />
+        <img
+          className="ml-20 w-[6rem] md:w-full h-[3rem] md:h-[6rem]"
           src={deferredNivona}
           alt="Nivona"
         />
         <img
-          className="ml-20 w-full h-[6rem]"
+          className="ml-20 w-[6rem] md:w-full h-[3rem] md:h-[6rem]"
           src={deferredGaggia}
           alt="Gaggia"
         />
-        <img className="ml-20 w-full h-[6rem]" src={deferredJura} alt="Jura" />
         <img
-          className="ml-20 w-full h-[6rem]"
+          className="ml-20 w-[6rem] md:w-full h-[3rem] md:h-[6rem]"
+          src={deferredJura}
+          alt="Jura"
+        />
+        <img
+          className="ml-20 w-[6rem] md:w-full h-[3rem] md:h-[6rem]"
           src={deferredMelitta}
           alt="Melitta"
         />
         <img
-          className="ml-20 w-full h-[6rem]"
+          className="ml-20 w-[6rem] md:w-full h-[3rem] md:h-[6rem]"
           src={deferredMiele}
           alt="Miele"
         />
