@@ -6,11 +6,14 @@ const Header: React.FC = () => {
   return (
     <header className="w-full absolute pt-6">
       <div className="flex items-center md:justify-end space-x-5 justify-center pb-5 max-w-7xl w-full mx-auto">
-        <a href="tel:+375447995969" className="flex justify-end text-white text-xl">
+        <a
+          href="tel:+375333482482"
+          className="flex justify-end text-white text-xl"
+        >
           <FormattedMessage id="PHONE" />
         </a>
 
-        <a href="viber://chat?number=%2B375447995969">
+        <a href="viber://chat?number=%2B375333482482">
           <svg
             id="Layer_1"
             width={50}
